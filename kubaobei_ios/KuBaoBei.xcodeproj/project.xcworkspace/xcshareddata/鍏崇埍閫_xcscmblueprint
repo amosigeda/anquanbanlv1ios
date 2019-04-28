@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "e7ddaa29-43d6-9e4e-b668-e32e5c04b262++5832",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "e7ddaa29-43d6-9e4e-b668-e32e5c04b262++5832" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "e7ddaa29-43d6-9e4e-b668-e32e5c04b262++5832" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DB34FF4B-98C4-4AD2-9B18-9E53674A3F0B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "e7ddaa29-43d6-9e4e-b668-e32e5c04b262++5832" : "%E8%A1%8D%E7%94%9F%E7%89%88\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "关爱通",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "关爱通\/Code\/iOS\/关爱通.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/183.62.161.182:8443\/svn\/%E6%97%A9%E6%95%99%E9%80%9A",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e7ddaa29-43d6-9e4e-b668-e32e5c04b262++5832"
+    }
+  ]
+}

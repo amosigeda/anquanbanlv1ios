@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HGI-Jm-zN8">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JC7-yB-Bfa">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HGI-Jm-zN8" secondAttribute="bottom" constant="10" id="2Nh-KY-RdD">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="JC7-yB-Bfa" secondAttribute="trailing" id="7pA-BB-TUE"/>
+                <constraint firstAttribute="trailing" secondItem="HGI-Jm-zN8" secondAttribute="trailing" constant="10" id="EpO-Er-ghk">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="HGI-Jm-zN8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ROB-wm-u9d">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="JC7-yB-Bfa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Va6-E6-Hxf"/>
+                <constraint firstAttribute="bottom" secondItem="JC7-yB-Bfa" secondAttribute="bottom" id="eJO-lC-bxy"/>
+                <constraint firstItem="HGI-Jm-zN8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="jMW-ek-Tes">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="JC7-yB-Bfa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rnp-xz-paK"/>
+            </constraints>
+            <size key="customSize" width="100" height="94"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="HGI-Jm-zN8"/>
+                    <exclude reference="JC7-yB-Bfa"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2Nh-KY-RdD"/>
+                    <exclude reference="EpO-Er-ghk"/>
+                    <exclude reference="ROB-wm-u9d"/>
+                    <exclude reference="jMW-ek-Tes"/>
+                    <exclude reference="7pA-BB-TUE"/>
+                    <exclude reference="Va6-E6-Hxf"/>
+                    <exclude reference="eJO-lC-bxy"/>
+                    <exclude reference="rnp-xz-paK"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="HGI-Jm-zN8"/>
+                    <include reference="JC7-yB-Bfa"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2Nh-KY-RdD"/>
+                    <include reference="EpO-Er-ghk"/>
+                    <include reference="ROB-wm-u9d"/>
+                    <include reference="jMW-ek-Tes"/>
+                    <include reference="7pA-BB-TUE"/>
+                    <include reference="Va6-E6-Hxf"/>
+                    <include reference="eJO-lC-bxy"/>
+                    <include reference="rnp-xz-paK"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bg_Image" destination="JC7-yB-Bfa" id="cyx-q3-rHW"/>
+                <outlet property="image_ImageView" destination="HGI-Jm-zN8" id="UcS-nq-T2e"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="288"/>
+        </collectionViewCell>
+    </objects>
+</document>

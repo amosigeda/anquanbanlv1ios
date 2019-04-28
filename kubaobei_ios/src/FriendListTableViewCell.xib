@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendListCell" rowHeight="120" id="KGk-i7-Jjw" customClass="FriendListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friend_tubiao.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-cO-6lx">
+                        <rect key="frame" x="26" y="12" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="JXw-hT-jml"/>
+                            <constraint firstAttribute="height" constant="35" id="elh-zd-cEe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111111111" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-sp-L99">
+                        <rect key="frame" x="78" y="8" width="218" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="218" id="2wU-M1-oum"/>
+                            <constraint firstAttribute="height" constant="21" id="K8V-n1-Ylh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPX-WX-lfN">
+                        <rect key="frame" x="78" y="31" width="300" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="bMg-vy-Mcs"/>
+                            <constraint firstAttribute="height" constant="21" id="d4w-Js-Lio"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.17202535271644592" green="0.45094579458236694" blue="0.65872418880462646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SPX-WX-lfN" firstAttribute="top" secondItem="vXo-sp-L99" secondAttribute="bottom" constant="2" id="1sW-5A-SOI"/>
+                    <constraint firstItem="FMI-cO-6lx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="DfQ-PC-18b"/>
+                    <constraint firstItem="SPX-WX-lfN" firstAttribute="leading" secondItem="FMI-cO-6lx" secondAttribute="trailing" constant="17" id="SyL-Rz-0Xe"/>
+                    <constraint firstItem="FMI-cO-6lx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="18" id="ZNx-oR-Ac5"/>
+                    <constraint firstItem="vXo-sp-L99" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="d0Q-sv-5IZ"/>
+                    <constraint firstItem="vXo-sp-L99" firstAttribute="leading" secondItem="FMI-cO-6lx" secondAttribute="trailing" constant="17" id="eW4-9o-4zo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImage" destination="FMI-cO-6lx" id="kqC-vn-Dse"/>
+                <outlet property="phoneLabel" destination="vXo-sp-L99" id="meN-Rk-1ih"/>
+                <outlet property="phoneShortLabel" destination="SPX-WX-lfN" id="kP0-Tu-2sw"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="245.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="friend_tubiao.jpg" width="50" height="50"/>
+    </resources>
+</document>

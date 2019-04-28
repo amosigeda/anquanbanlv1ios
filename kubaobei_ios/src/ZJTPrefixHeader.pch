@@ -1,0 +1,46 @@
+//
+//  ZJTPrefixHeader.pch
+//  酷宝贝
+//
+//  Created by yangkang on 16/6/22.
+//  Copyright © 2016年 YiWen. All rights reserved.
+//
+
+#ifndef ____ZJTPrefixHeader_pch
+#define ____ZJTPrefixHeader_pch
+//#import <MapKit/MapKit.h>
+//#import <CoreLocation/CoreLocation.h>
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//#define PHOTO @"120.24.156.131:6700/IFile/GetImage"
+//#define AUDIO  @"120.24.156.131:6700/IFile/GetAMR"
+//#define PROJECT @"ZJT"
+#define PROJECT @"AnQuanShouHuII"
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+#ifdef DEBUG
+#define NSlog @"1"
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSlog @"0"
+#define NSLog(...)
+#define debugMethod()
+#endif
+//#define PHOTO @"192.168.1.199:6700/IFile/GetImage"
+//#define AUDIO  @"192.168.1.199:6700/IFile/GetAMR"
+#define PHOTO @"www.etobaogroup.com:6700/IFile/GetImage"
+#define AUDIO  @"www.etobaogroup.com:6700/IFile/GetAMR"
+//#define PHOTO @"apps.8kk.win:6700/IFile/GetImage"
+//#define AUDIO  @"apps.8kk.win:6700/IFile/GetAMR"
+#define navigationBarColor [UIColor colorWithRed:40/255.0 green:220/255.0 blue:220/255.0 alpha:1]
+#define MCN_buttonColor [UIColor colorWithRed:40/255.0 green:220/255.0 blue:220/255.0 alpha:1]
+#define HTTPS @"https://%@?path=%@"
+
+#endif

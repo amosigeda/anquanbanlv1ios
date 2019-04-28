@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yaosdasdad" rowHeight="120" id="KGk-i7-Jjw" customClass="BookTwoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cuntom_head.png" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-cO-6lx">
+                        <rect key="frame" x="38" y="15" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="JXw-hT-jml"/>
+                            <constraint firstAttribute="height" constant="35" id="elh-zd-cEe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小刘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deF-DF-Y2L">
+                        <rect key="frame" x="17" y="56" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ixa-AQ-Lqy"/>
+                            <constraint firstAttribute="height" constant="21" id="oD8-uz-g1g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111111111（我）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-sp-L99">
+                        <rect key="frame" x="90" y="11" width="218" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="218" id="2wU-M1-oum"/>
+                            <constraint firstAttribute="height" constant="21" id="K8V-n1-Ylh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加短号/亲情号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPX-WX-lfN">
+                        <rect key="frame" x="90" y="34" width="300" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="bMg-vy-Mcs"/>
+                            <constraint firstAttribute="height" constant="21" id="d4w-Js-Lio"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.094117647058823528" green="0.58823529411764708" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP_type.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sy9-cg-XGf">
+                        <rect key="frame" x="394" y="31" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Bw6-um-Myp"/>
+                            <constraint firstAttribute="height" constant="22" id="ShT-1k-1BL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bw6-um-Myp"/>
+                                <exclude reference="ShT-1k-1BL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Bw6-um-Myp"/>
+                                <include reference="ShT-1k-1BL"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="govenment_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="iwf-4q-UTe">
+                        <rect key="frame" x="60" y="35" width="15" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="gac-cU-hqt"/>
+                            <constraint firstAttribute="width" constant="15" id="tBJ-86-vUt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gac-cU-hqt"/>
+                                <exclude reference="tBJ-86-vUt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="gac-cU-hqt"/>
+                                <include reference="tBJ-86-vUt"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="govenment_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="BMJ-yr-7tT">
+                        <rect key="frame" x="60" y="13" width="15" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="GYM-cO-qwV"/>
+                            <constraint firstAttribute="width" constant="15" id="nzq-fZ-CtW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GYM-cO-qwV"/>
+                                <exclude reference="nzq-fZ-CtW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="GYM-cO-qwV"/>
+                                <include reference="nzq-fZ-CtW"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sy9-cg-XGf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="0XB-e2-Sgn"/>
+                    <constraint firstItem="SPX-WX-lfN" firstAttribute="top" secondItem="vXo-sp-L99" secondAttribute="bottom" constant="2" id="1sW-5A-SOI"/>
+                    <constraint firstItem="deF-DF-Y2L" firstAttribute="top" secondItem="FMI-cO-6lx" secondAttribute="bottom" constant="6" id="6V9-ru-e4M"/>
+                    <constraint firstItem="iwf-4q-UTe" firstAttribute="trailing" secondItem="BMJ-yr-7tT" secondAttribute="trailing" id="7U5-Vc-aLv"/>
+                    <constraint firstItem="FMI-cO-6lx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="DfQ-PC-18b"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sy9-cg-XGf" secondAttribute="trailing" constant="16" id="M5K-bA-xd8"/>
+                    <constraint firstItem="iwf-4q-UTe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="24" id="ScJ-v5-YlA"/>
+                    <constraint firstItem="SPX-WX-lfN" firstAttribute="leading" secondItem="FMI-cO-6lx" secondAttribute="trailing" constant="17" id="SyL-Rz-0Xe"/>
+                    <constraint firstItem="BMJ-yr-7tT" firstAttribute="top" secondItem="FMI-cO-6lx" secondAttribute="top" constant="-2" id="V8o-RP-n2n"/>
+                    <constraint firstItem="FMI-cO-6lx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="18" id="ZNx-oR-Ac5"/>
+                    <constraint firstItem="iwf-4q-UTe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="40" id="b1k-DG-75K"/>
+                    <constraint firstItem="vXo-sp-L99" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="d0Q-sv-5IZ"/>
+                    <constraint firstItem="vXo-sp-L99" firstAttribute="leading" secondItem="FMI-cO-6lx" secondAttribute="trailing" constant="17" id="eW4-9o-4zo"/>
+                    <constraint firstItem="deF-DF-Y2L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="zqo-IE-gmF"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="Sy9-cg-XGf"/>
+                        <exclude reference="iwf-4q-UTe"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="ScJ-v5-YlA"/>
+                        <exclude reference="b1k-DG-75K"/>
+                        <exclude reference="0XB-e2-Sgn"/>
+                        <exclude reference="M5K-bA-xd8"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="Sy9-cg-XGf"/>
+                        <include reference="iwf-4q-UTe"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="ScJ-v5-YlA"/>
+                        <include reference="b1k-DG-75K"/>
+                        <include reference="0XB-e2-Sgn"/>
+                        <include reference="M5K-bA-xd8"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="govenImage" destination="iwf-4q-UTe" id="Cv0-AG-EkP"/>
+                <outlet property="headImage" destination="FMI-cO-6lx" id="kqC-vn-Dse"/>
+                <outlet property="meImage" destination="BMJ-yr-7tT" id="u9M-2V-l96"/>
+                <outlet property="nameLabel" destination="deF-DF-Y2L" id="uMi-Kr-X2A"/>
+                <outlet property="phoneLabel" destination="vXo-sp-L99" id="meN-Rk-1ih"/>
+                <outlet property="phoneShortLabel" destination="SPX-WX-lfN" id="kP0-Tu-2sw"/>
+                <outlet property="typeImage" destination="Sy9-cg-XGf" id="mHg-NH-Drs"/>
+            </connections>
+            <point key="canvasLocation" x="215" y="159"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="APP_type.png" width="14" height="14"/>
+        <image name="cuntom_head.png" width="60" height="72"/>
+        <image name="govenment_icon.png" width="8" height="11"/>
+    </resources>
+</document>

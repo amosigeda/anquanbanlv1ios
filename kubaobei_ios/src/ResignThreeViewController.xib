@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResignThreeViewController">
+            <connections>
+                <outlet property="binding_Btn" destination="1Ym-2U-J5I" id="V7S-Qc-lh6"/>
+                <outlet property="lsit_Label" destination="cSP-CM-7hx" id="T4d-4Z-Zna"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="RTC-pA-yYh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="8ds-ig-GPq">
+                    <rect key="frame" x="67.5" y="83" width="240" height="237"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="27f-he-Jg5"/>
+                        <constraint firstAttribute="height" constant="237" id="ma0-r5-lQH"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="27f-he-Jg5"/>
+                            <exclude reference="ma0-r5-lQH"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="27f-he-Jg5"/>
+                            <include reference="ma0-r5-lQH"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSP-CM-7hx">
+                    <rect key="frame" x="0.0" y="371" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="RwQ-AY-TLU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="RwQ-AY-TLU"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="RwQ-AY-TLU"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ym-2U-J5I">
+                    <rect key="frame" x="62.5" y="431" width="250" height="41"/>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.58823529411764708" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="8RS-9A-W2K"/>
+                        <constraint firstAttribute="height" constant="41" id="sMQ-Nn-xgy"/>
+                    </constraints>
+                    <state key="normal" title="绑定手表">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8RS-9A-W2K"/>
+                            <exclude reference="sMQ-Nn-xgy"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="8RS-9A-W2K"/>
+                            <include reference="sMQ-Nn-xgy"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="qrcView:" destination="-1" eventType="touchUpInside" id="Vzy-9h-5bs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="8ds-ig-GPq" secondAttribute="centerX" id="4kL-K6-Iha"/>
+                <constraint firstItem="RTC-pA-yYh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CPg-JS-X3q"/>
+                <constraint firstItem="1Ym-2U-J5I" firstAttribute="top" secondItem="cSP-CM-7hx" secondAttribute="bottom" constant="39" id="D0C-w3-lc3"/>
+                <constraint firstItem="RTC-pA-yYh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="S74-p7-wdV"/>
+                <constraint firstItem="8ds-ig-GPq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="83" id="SlB-Bh-ih6"/>
+                <constraint firstAttribute="trailing" secondItem="RTC-pA-yYh" secondAttribute="trailing" id="b1N-fV-5Lg"/>
+                <constraint firstItem="cSP-CM-7hx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fGn-F9-ifo"/>
+                <constraint firstItem="cSP-CM-7hx" firstAttribute="top" secondItem="8ds-ig-GPq" secondAttribute="bottom" constant="51" id="g0c-eM-Gcg"/>
+                <constraint firstAttribute="trailing" secondItem="cSP-CM-7hx" secondAttribute="trailing" id="iZP-5e-zMn"/>
+                <constraint firstAttribute="centerX" secondItem="1Ym-2U-J5I" secondAttribute="centerX" id="jkk-K1-Ulh"/>
+                <constraint firstAttribute="bottom" secondItem="RTC-pA-yYh" secondAttribute="bottom" id="wfb-OL-Kh1"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="RTC-pA-yYh"/>
+                    <exclude reference="8ds-ig-GPq"/>
+                    <exclude reference="cSP-CM-7hx"/>
+                    <exclude reference="1Ym-2U-J5I"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="D0C-w3-lc3"/>
+                    <exclude reference="jkk-K1-Ulh"/>
+                    <exclude reference="4kL-K6-Iha"/>
+                    <exclude reference="SlB-Bh-ih6"/>
+                    <exclude reference="CPg-JS-X3q"/>
+                    <exclude reference="S74-p7-wdV"/>
+                    <exclude reference="b1N-fV-5Lg"/>
+                    <exclude reference="wfb-OL-Kh1"/>
+                    <exclude reference="fGn-F9-ifo"/>
+                    <exclude reference="g0c-eM-Gcg"/>
+                    <exclude reference="iZP-5e-zMn"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="RTC-pA-yYh"/>
+                    <include reference="8ds-ig-GPq"/>
+                    <include reference="cSP-CM-7hx"/>
+                    <include reference="1Ym-2U-J5I"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="D0C-w3-lc3"/>
+                    <include reference="jkk-K1-Ulh"/>
+                    <include reference="4kL-K6-Iha"/>
+                    <include reference="SlB-Bh-ih6"/>
+                    <include reference="CPg-JS-X3q"/>
+                    <include reference="S74-p7-wdV"/>
+                    <include reference="b1N-fV-5Lg"/>
+                    <include reference="wfb-OL-Kh1"/>
+                    <include reference="fGn-F9-ifo"/>
+                    <include reference="g0c-eM-Gcg"/>
+                    <include reference="iZP-5e-zMn"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="226" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg.png" width="319" height="567"/>
+        <image name="success_image.png" width="265" height="261"/>
+    </resources>
+</document>

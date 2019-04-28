@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="32" id="KGk-i7-Jjw" customClass="SearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-Ir-6xA">
+                        <rect key="frame" x="34" y="11.5" width="255" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="XeC-qc-meJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XeC-qc-meJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="XeC-qc-meJ"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker.png" translatesAutoresizingMaskIntoConstraints="NO" id="NtG-Cb-kpC">
+                        <rect key="frame" x="8" y="12" width="16" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="5cg-Qk-hFj"/>
+                            <constraint firstAttribute="height" constant="20" id="Rh9-J5-nep"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5cg-Qk-hFj"/>
+                                <exclude reference="Rh9-J5-nep"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5cg-Qk-hFj"/>
+                                <include reference="Rh9-J5-nep"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gray_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="is2-Rt-J4F">
+                        <rect key="frame" x="304" y="15" width="8" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="ViE-q8-AoM"/>
+                            <constraint firstAttribute="height" constant="14" id="cgm-CN-Udz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ViE-q8-AoM"/>
+                                <exclude reference="cgm-CN-Udz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ViE-q8-AoM"/>
+                                <include reference="cgm-CN-Udz"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NtG-Cb-kpC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1gd-bv-ayj"/>
+                    <constraint firstItem="is2-Rt-J4F" firstAttribute="leading" secondItem="NaO-Ir-6xA" secondAttribute="trailing" constant="15" id="6uI-zO-aZs"/>
+                    <constraint firstItem="NtG-Cb-kpC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8gd-vC-fVK"/>
+                    <constraint firstItem="is2-Rt-J4F" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NMJ-yn-ZOU"/>
+                    <constraint firstItem="NaO-Ir-6xA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="faU-SK-CO2"/>
+                    <constraint firstItem="is2-Rt-J4F" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qdX-nA-qIu"/>
+                    <constraint firstItem="NaO-Ir-6xA" firstAttribute="leading" secondItem="NtG-Cb-kpC" secondAttribute="trailing" constant="10" id="vfq-C7-uB8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="NaO-Ir-6xA"/>
+                        <exclude reference="NtG-Cb-kpC"/>
+                        <exclude reference="is2-Rt-J4F"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="1gd-bv-ayj"/>
+                        <exclude reference="8gd-vC-fVK"/>
+                        <exclude reference="faU-SK-CO2"/>
+                        <exclude reference="vfq-C7-uB8"/>
+                        <exclude reference="6uI-zO-aZs"/>
+                        <exclude reference="NMJ-yn-ZOU"/>
+                        <exclude reference="qdX-nA-qIu"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="NaO-Ir-6xA"/>
+                        <include reference="NtG-Cb-kpC"/>
+                        <include reference="is2-Rt-J4F"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="1gd-bv-ayj"/>
+                        <include reference="8gd-vC-fVK"/>
+                        <include reference="faU-SK-CO2"/>
+                        <include reference="vfq-C7-uB8"/>
+                        <include reference="6uI-zO-aZs"/>
+                        <include reference="NMJ-yn-ZOU"/>
+                        <include reference="qdX-nA-qIu"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="NaO-Ir-6xA" id="uOh-Ic-aOC"/>
+            </connections>
+            <point key="canvasLocation" x="492" y="201"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gray_arrow.png" width="5" height="8"/>
+        <image name="marker.png" width="20" height="27"/>
+    </resources>
+</document>

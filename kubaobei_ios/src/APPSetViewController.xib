@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APPSetViewController">
+            <connections>
+                <outlet property="logoutButton" destination="aV0-Ko-CGm" id="2xP-nS-czB"/>
+                <outlet property="tableView" destination="ChO-tB-Ub6" id="g1X-TZ-aTT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ChO-tB-Ub6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="201" id="C86-G8-fpg">
+                            <variation key="heightClass=regular-widthClass=compact" constant="140"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="C86-G8-fpg"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="C86-G8-fpg"/>
+                        </mask>
+                    </variation>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV0-Ko-CGm">
+                    <rect key="frame" x="38" y="185" width="299" height="41"/>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.58823529411764708" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="T4O-ab-5JB"/>
+                    </constraints>
+                    <state key="normal" title="退出登录">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="T4O-ab-5JB"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="T4O-ab-5JB"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="doLogout:" destination="-1" eventType="touchUpInside" id="cw7-1e-KaT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aV0-Ko-CGm" secondAttribute="trailing" constant="38" id="JQN-3V-5Gg"/>
+                <constraint firstAttribute="trailing" secondItem="ChO-tB-Ub6" secondAttribute="trailing" id="SzE-xu-HbR"/>
+                <constraint firstItem="ChO-tB-Ub6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="anQ-pC-DLV"/>
+                <constraint firstItem="aV0-Ko-CGm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="bhX-LS-UmK"/>
+                <constraint firstItem="aV0-Ko-CGm" firstAttribute="top" secondItem="ChO-tB-Ub6" secondAttribute="bottom" constant="34" id="ikW-Nj-bAE">
+                    <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                </constraint>
+                <constraint firstItem="ChO-tB-Ub6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="lTJ-LN-cEg">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ChO-tB-Ub6"/>
+                    <exclude reference="aV0-Ko-CGm"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="SzE-xu-HbR"/>
+                    <exclude reference="anQ-pC-DLV"/>
+                    <exclude reference="lTJ-LN-cEg"/>
+                    <exclude reference="JQN-3V-5Gg"/>
+                    <exclude reference="bhX-LS-UmK"/>
+                    <exclude reference="ikW-Nj-bAE"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ChO-tB-Ub6"/>
+                    <include reference="aV0-Ko-CGm"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="SzE-xu-HbR"/>
+                    <include reference="anQ-pC-DLV"/>
+                    <include reference="lTJ-LN-cEg"/>
+                    <include reference="JQN-3V-5Gg"/>
+                    <include reference="bhX-LS-UmK"/>
+                    <include reference="ikW-Nj-bAE"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="131" y="55"/>
+        </view>
+    </objects>
+</document>

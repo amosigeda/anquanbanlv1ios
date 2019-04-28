@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="689" id="KGk-i7-Jjw" customClass="SendAudioTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="78.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="c41-Kf-5G6">
+                        <rect key="frame" x="322" y="22" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="D47-0n-j1M"/>
+                            <constraint firstAttribute="height" constant="35" id="rup-eW-kV4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="D47-0n-j1M"/>
+                                <exclude reference="rup-eW-kV4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="D47-0n-j1M"/>
+                                <include reference="rup-eW-kV4"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKW-z6-nPZ">
+                        <rect key="frame" x="264" y="32" width="58" height="39.5"/>
+                        <state key="normal" backgroundImage="button:tKW-z6-nPZ:backgroundImage">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4″" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1Q-qU-qRY">
+                        <rect key="frame" x="214" y="40" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="VNx-tz-Tof"/>
+                            <constraint firstAttribute="height" constant="21" id="gb8-XA-SUD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VNx-tz-Tof"/>
+                                <exclude reference="gb8-XA-SUD"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="VNx-tz-Tof"/>
+                                <include reference="gb8-XA-SUD"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ5-m5-cNd">
+                        <rect key="frame" x="337" y="4" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="L18-Yu-chK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L18-Yu-chK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="L18-Yu-chK"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="send_signal_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="vZZ-Uh-TP3">
+                        <rect key="frame" x="288" y="44" width="14" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ECy-Zh-dSQ"/>
+                            <constraint firstAttribute="width" constant="14" id="XMh-fH-Y70"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxR-H4-tEC">
+                        <rect key="frame" x="269" y="37" width="38" height="29.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="9eW-Ie-KIR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kjh喝酒" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZp-W8-uFu">
+                        <rect key="frame" x="310.5" y="57" width="41.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tKW-z6-nPZ" firstAttribute="height" secondItem="zxR-H4-tEC" secondAttribute="height" constant="10" id="0h8-yo-Yeq"/>
+                    <constraint firstItem="c41-Kf-5G6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="3Er-HS-1lw"/>
+                    <constraint firstItem="vZZ-Uh-TP3" firstAttribute="centerY" secondItem="zxR-H4-tEC" secondAttribute="centerY" id="73B-CO-teQ"/>
+                    <constraint firstItem="tKW-z6-nPZ" firstAttribute="width" secondItem="zxR-H4-tEC" secondAttribute="width" constant="20" id="G2k-LV-rsD"/>
+                    <constraint firstItem="tKW-z6-nPZ" firstAttribute="centerY" secondItem="zxR-H4-tEC" secondAttribute="centerY" id="Htw-E6-sp6"/>
+                    <constraint firstItem="yZp-W8-uFu" firstAttribute="trailing" secondItem="c41-Kf-5G6" secondAttribute="trailing" constant="-5" id="Ib9-em-2Sz"/>
+                    <constraint firstItem="zxR-H4-tEC" firstAttribute="top" secondItem="c41-Kf-5G6" secondAttribute="top" constant="15" id="JJT-dw-R96"/>
+                    <constraint firstItem="c41-Kf-5G6" firstAttribute="leading" secondItem="tKW-z6-nPZ" secondAttribute="trailing" id="L5W-yk-96o"/>
+                    <constraint firstAttribute="trailing" secondItem="fJ5-m5-cNd" secondAttribute="trailing" constant="50" id="N3W-hZ-Wa6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="c41-Kf-5G6" secondAttribute="trailing" constant="4" id="PZH-IP-UWu">
+                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                    </constraint>
+                    <constraint firstItem="c41-Kf-5G6" firstAttribute="leading" secondItem="zxR-H4-tEC" secondAttribute="trailing" constant="15" id="XI7-vI-XIe"/>
+                    <constraint firstItem="H1Q-qU-qRY" firstAttribute="top" secondItem="zxR-H4-tEC" secondAttribute="top" constant="3" id="bjS-XO-Z1Z"/>
+                    <constraint firstAttribute="bottom" secondItem="zxR-H4-tEC" secondAttribute="bottom" constant="12" id="eTF-YD-IIe"/>
+                    <constraint firstItem="tKW-z6-nPZ" firstAttribute="leading" secondItem="H1Q-qU-qRY" secondAttribute="trailing" constant="8" id="k0N-uT-q2c"/>
+                    <constraint firstItem="yZp-W8-uFu" firstAttribute="top" secondItem="c41-Kf-5G6" secondAttribute="bottom" id="lAv-Os-tk8"/>
+                    <constraint firstItem="vZZ-Uh-TP3" firstAttribute="trailing" secondItem="zxR-H4-tEC" secondAttribute="trailing" constant="-5" id="ncz-js-fgF"/>
+                    <constraint firstItem="fJ5-m5-cNd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-7" id="s6X-S1-7qq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="c41-Kf-5G6"/>
+                        <exclude reference="tKW-z6-nPZ"/>
+                        <exclude reference="H1Q-qU-qRY"/>
+                        <exclude reference="fJ5-m5-cNd"/>
+                        <exclude reference="vZZ-Uh-TP3"/>
+                        <exclude reference="zxR-H4-tEC"/>
+                        <exclude reference="yZp-W8-uFu"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="3Er-HS-1lw"/>
+                        <exclude reference="PZH-IP-UWu"/>
+                        <exclude reference="s6X-S1-7qq"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="c41-Kf-5G6"/>
+                        <include reference="tKW-z6-nPZ"/>
+                        <include reference="H1Q-qU-qRY"/>
+                        <include reference="fJ5-m5-cNd"/>
+                        <include reference="vZZ-Uh-TP3"/>
+                        <include reference="zxR-H4-tEC"/>
+                        <include reference="yZp-W8-uFu"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="3Er-HS-1lw"/>
+                        <include reference="PZH-IP-UWu"/>
+                        <include reference="s6X-S1-7qq"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="headImage" destination="c41-Kf-5G6" id="Sth-2J-Xr7"/>
+                <outlet property="lengthLabel" destination="H1Q-qU-qRY" id="ebI-m7-ZL5"/>
+                <outlet property="listButton" destination="tKW-z6-nPZ" id="pl4-Ky-F8I"/>
+                <outlet property="msgLabel" destination="zxR-H4-tEC" id="3ko-41-ZjA"/>
+                <outlet property="nameLabel" destination="yZp-W8-uFu" id="sfJ-h8-oZp"/>
+                <outlet property="signalImage" destination="vZZ-Uh-TP3" id="roB-Xp-jP3"/>
+                <outlet property="timeLabel" destination="fJ5-m5-cNd" id="jat-7f-8Ue"/>
+            </connections>
+            <point key="canvasLocation" x="375.5" y="530.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button:tKW-z6-nPZ:backgroundImage" width="58" height="29">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
+GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7NTgsIDI5fdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
+HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPESLmTU0AKgAAGlAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdFAIfAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAMjFwMlPCgFPUcwB0lKMgdLSTIHS0kyB0tJMgdLSTIH
+S0kyB0tJMgdLSTIHS0kyB0tJMgdLSTIHS0kyB0tJMgdLSTIHS0kyB0tJMgdLSTIHS0kyB0tJMgdLSTIH
+S0kyB0tKMgdLRC4GRjUkBTYXEAIZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgIWDwoBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAMSEEMoZbDYjJhxTM6ZsX6/uoGf79sRr//bIa//2yGv/9shr//bIa//2yGv/9shr//bIa
+//2yGv/9shr//bIa//2yGv/9shr//bIa//2yGv/9shr//bIa//2yGv/9shr//bIa//2yGv/9shr//bIa
+//2uGv/2pRj535cW4rd6ErppRgprLB4ELhALAREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAABgQAhlnRQppf1QMgQQDAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApGwQqo24Q
+pfOkGPX9shr//a4a//2sGv/9qxr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//asa
+//2tGv/9rxr//bEa/++fF/LdlRXfyIgTza10EbCVZA6XgFYNg3BKCnJlRAlnYkEJY2hGCmp2Twt4j2AO
+krh7ErvjnBfm8KAX8y0fBC8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiQwlk6J4X6/2yGv/9qxr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/9rBr//a0a//2uGv/9rxr//bEa//2yGv/9sxr//bMa//2zGv/9sxr//bIa//2xGv/9shr//a4a
+/2JBCWMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF/VA2B/awa//2tGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/9rRr//K0Z/npRDHwAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAB3Twx5/a4a//2sGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//2rGv/9shr/66AY7WdFCmkAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAABJMAdL9agZ9/2sGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/9qxr//a8a//2yGv/0oxn3rHURrzEhBTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARDQET048V
+1v2vGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/9qxr/9KMZ
+9651EbF1Tgt3Lh8EMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAb0oLcf2xGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//awa/+ufGO4lGAMmAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgcAC82JFND9rhr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/9shr/fVQMfwAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4pBT/5qRn7/Ksa//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//a4a/86KFNEFAwAGAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAACNXg6P/a4a//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//2sGv/woBfzKRsEKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAzYkU0P2rGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/9qxr//KsZ/kkxB0oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+APOiGfb8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//2yGv9cPQheAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7qBn+/Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/9sxr/Xj4JXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4pcX5f2rGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/9qRr//a4a
+/1M3CFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKxzEa/9rBr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//asa//akGPk5JQU6AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgQAli/a4a//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//2sGv/jlhXmEwwBFAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAHRQDHuaaFun9rRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/9sRr/pm4QqQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAChbA+j/bIa//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr/+6wZ/Uw0B04AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAANCQFNvOlGPX9rBr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//bEa/8KBFMUGBAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAACNXg6P/bIa//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//awa
+//WnGfc/KgVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAsB
+EcODE8f9shr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//asa//2xGv98Ugx+AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhFwMi0I0U
+0/2yGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//awa//2xGv+SYQ6VAwIABQAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8VAyG+gRLB/bIa
+//2sGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//a4a//mqGfuCVw2FBAMABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQkBDoRYDYbvohfx/bIa
+//2tGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//2rGv/9rhr//bEa/9SQFddRNghSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALB0ELZNlDpbelxbh/a0a
+//2tGv/9qxr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/9qRr//awa//2uGv/6pxn8zIgU
+z3FLC3MUDQIWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFxACGU80B1GhbQ+j25MW
+3vimGPv9qxr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/8qRr//Kka
+//ypGv/8qRr//Kka//ypGv/8qRr//Kka//ypGv/7qBn+7Z8X8MuIE86FWw2HOCUFOggFAAkAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAOAQAAAwAAAAEAOgAAAQEAAwAAAAEAHQAAAQIAAwAAAAQAABr+AQMAAwAAAAEAAQAAAQYAAwAAAAEA
+AgAAAREABAAAAAEAAAAIARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAHQAAARcABAAAAAEA
+ABpIARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAQAABsGh3MABwAAB9gAABsOAAAAAAAIAAgA
+CAAIAAEAAQABAAEAAAfYYXBwbAIgAABtbnRyUkdCIFhZWiAH2QACABkACwAaAAthY3NwQVBQTAAAAABh
+cHBsAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAAG9kc2NtAAABeAAABZxjcHJ0AAAHFAAAADh3
+dHB0AAAHTAAAABRyWFlaAAAHYAAAABRnWFlaAAAHdAAAABRiWFlaAAAHiAAAABRyVFJDAAAHnAAAAA5j
+aGFkAAAHrAAAACxiVFJDAAAHnAAAAA5nVFJDAAAHnAAAAA5kZXNjAAAAAAAAABRHZW5lcmljIFJHQiBQ
+cm9maWxlAAAAAAAAAAAAAAAUR2VuZXJpYyBSR0IgUHJvZmlsZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbWx1YwAAAAAAAAAfAAAADHNrU0sAAAAoAAABhGRhREsA
+AAAuAAABrGNhRVMAAAAkAAAB2nZpVk4AAAAkAAAB/nB0QlIAAAAmAAACInVrVUEAAAAqAAACSGZyRlUA
+AAAoAAACcmh1SFUAAAAoAAACmnpoVFcAAAAWAAACwm5iTk8AAAAmAAAC2GNzQ1oAAAAiAAAC/mhlSUwA
+AAAeAAADIGl0SVQAAAAoAAADPnJvUk8AAAAkAAADZmRlREUAAAAsAAADimtvS1IAAAAWAAADtnN2U0UA
+AAAmAAAC2HpoQ04AAAAWAAADzGphSlAAAAAaAAAD4mVsR1IAAAAiAAAD/HB0UE8AAAAmAAAEHm5sTkwA
+AAAoAAAERGVzRVMAAAAmAAAEHnRoVEgAAAAkAAAEbHRyVFIAAAAiAAAEkGZpRkkAAAAoAAAEsmhySFIA
+AAAoAAAE2nBsUEwAAAAsAAAFAnJ1UlUAAAAiAAAFLmFyRUcAAAAmAAAFUGVuVVMAAAAmAAAFdgBWAWEA
+ZQBvAGIAZQBjAG4A/QAgAFIARwBCACAAcAByAG8AZgBpAGwARwBlAG4AZQByAGUAbAAgAFIARwBCAC0A
+YgBlAHMAawByAGkAdgBlAGwAcwBlAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUAbgDoAHIAaQBjAEMe
+pQB1ACAAaADsAG4AaAAgAFIARwBCACAAQwBoAHUAbgBnAFAAZQByAGYAaQBsACAAUgBHAEIAIABHAGUA
+bgDpAHIAaQBjAG8EFwQwBDMEMAQ7BEwEPQQ4BDkAIAQ/BEAEPgREBDAEOQQ7ACAAUgBHAEIAUAByAG8A
+ZgBpAGwAIABnAOkAbgDpAHIAaQBxAHUAZQAgAFIAVgBCAMEAbAB0AGEAbADhAG4AbwBzACAAUgBHAEIA
+IABwAHIAbwBmAGkAbJAadSgAIABSAEcAQgAggnJfaWPPj/AARwBlAG4AZQByAGkAcwBrACAAUgBHAEIA
+LQBwAHIAbwBmAGkAbABPAGIAZQBjAG4A/QAgAFIARwBCACAAcAByAG8AZgBpAGwF5AXoBdUF5AXZBdwA
+IABSAEcAQgAgBdsF3AXcBdkAUAByAG8AZgBpAGwAbwAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBvAFAA
+cgBvAGYAaQBsACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAEEAbABsAGcAZQBtAGUAaQBuAGUAcwAgAFIA
+RwBCAC0AUAByAG8AZgBpAGzHfLwYACAAUgBHAEIAINUEuFzTDMd8Zm6QGgAgAFIARwBCACBjz4/wZYdO
+9k4AgiwAIABSAEcAQgAgMNcw7TDVMKEwpDDrA5MDtQO9A7kDugPMACADwAPBA78DxgOvA7sAIABSAEcA
+QgBQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6QByAGkAYwBvAEEAbABnAGUAbQBlAGUAbgAgAFIA
+RwBCAC0AcAByAG8AZgBpAGUAbA5CDhsOIw5EDh8OJQ5MACAAUgBHAEIAIA4XDjEOSA4nDkQOGwBHAGUA
+bgBlAGwAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGkAWQBsAGUAaQBuAGUAbgAgAFIARwBCAC0AcAByAG8A
+ZgBpAGkAbABpAEcAZQBuAGUAcgBpAQ0AawBpACAAUgBHAEIAIABwAHIAbwBmAGkAbABVAG4AaQB3AGUA
+cgBzAGEAbABuAHkAIABwAHIAbwBmAGkAbAAgAFIARwBCBB4EMQRJBDgEOQAgBD8EQAQ+BEQEOAQ7BEwA
+IABSAEcAQgZFBkQGQQAgBioGOQYxBkoGQQAgAFIARwBCACAGJwZEBjkGJwZFAEcAZQBuAGUAcgBpAGMA
+IABSAEcAQgAgAFAAcgBvAGYAaQBsAGV0ZXh0AAAAAENvcHlyaWdodCAyMDA3IEFwcGxlIEluYy4sIGFs
+bCByaWdodHMgcmVzZXJ2ZWQuAFhZWiAAAAAAAADzUgABAAAAARbPWFlaIAAAAAAAAHRNAAA97gAAA9BY
+WVogAAAAAAAAWnUAAKxzAAAXNFhZWiAAAAAAAAAoGgAAFZ8AALg2Y3VydgAAAAAAAAABAc0AAHNmMzIA
+AAAAAAEMQgAABd7///MmAAAHkgAA/ZH///ui///9owAAA9wAAMBs0iUmJyhaJGNsYXNzbmFtZVgkY2xh
+c3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCjJykqWk5TSW1hZ2VSZXBYTlNPYmplY3TSJSYsLVdOU0FycmF5
+oiwq0iUmLzBeTlNNdXRhYmxlQXJyYXmjLywq0zIzCjQ1NldOU1doaXRlXE5TQ29sb3JTcGFjZUQwIDAA
+EAOADNIlJjg5V05TQ29sb3KiOCrSJSY7PFdOU0ltYWdlojsqXxAPTlNLZXllZEFyY2hpdmVy0T9AVHJv
+b3SAAQAIABEAGgAjAC0AMgA3AEYATABXAF4AZQByAHkAgQCDAIUAigCMAI4AlwCcAKcAqQCrAK0AsgC1
+ALcAuQC7AL0AwgDZANsA3SPHI8wj1yPgI/Mj9yQCJAskECQYJBskICQvJDMkOiRCJE8kVCRWJFgkXSRl
+JGgkbSR1JHgkiiSNJJIAAAAAAAACAQAAAAAAAABBAAAAAAAAAAAAAAAAAAAklA
+</mutableData>
+        </image>
+        <image name="head_1.png" width="55" height="56"/>
+        <image name="send_signal_3.png" width="10" height="16"/>
+    </resources>
+</document>

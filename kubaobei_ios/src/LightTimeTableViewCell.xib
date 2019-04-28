@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="36" id="KGk-i7-Jjw" customClass="LightTimeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cv-9C-zjU">
+                        <rect key="frame" x="8" y="8" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6dx-QH-bN7"/>
+                            <constraint firstAttribute="width" constant="200" id="DH2-k7-3Qh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6dx-QH-bN7"/>
+                                <exclude reference="DH2-k7-3Qh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6dx-QH-bN7"/>
+                                <include reference="DH2-k7-3Qh"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gou.png" translatesAutoresizingMaskIntoConstraints="NO" id="tEH-ic-998">
+                        <rect key="frame" x="291" y="12" width="14" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="BCW-Q6-Vrt"/>
+                            <constraint firstAttribute="height" constant="13.5" id="WIs-rs-M8z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BCW-Q6-Vrt"/>
+                                <exclude reference="WIs-rs-M8z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="BCW-Q6-Vrt"/>
+                                <include reference="WIs-rs-M8z"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Cv-9C-zjU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0J4-wv-5nU"/>
+                    <constraint firstItem="3Cv-9C-zjU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2Sf-0F-yck"/>
+                    <constraint firstItem="tEH-ic-998" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="m9h-Ks-lxt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tEH-ic-998" secondAttribute="trailing" constant="7" id="nq2-T2-kM9"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="3Cv-9C-zjU"/>
+                        <exclude reference="tEH-ic-998"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="0J4-wv-5nU"/>
+                        <exclude reference="2Sf-0F-yck"/>
+                        <exclude reference="m9h-Ks-lxt"/>
+                        <exclude reference="nq2-T2-kM9"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="3Cv-9C-zjU"/>
+                        <include reference="tEH-ic-998"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="0J4-wv-5nU"/>
+                        <include reference="2Sf-0F-yck"/>
+                        <include reference="m9h-Ks-lxt"/>
+                        <include reference="nq2-T2-kM9"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gouImage" destination="tEH-ic-998" id="iHw-K0-86W"/>
+                <outlet property="titleLabel" destination="3Cv-9C-zjU" id="nTN-b5-93A"/>
+            </connections>
+            <point key="canvasLocation" x="325.5" y="212"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gou.png" width="14" height="9"/>
+    </resources>
+</document>

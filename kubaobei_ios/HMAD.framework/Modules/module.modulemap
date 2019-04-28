@@ -1,0 +1,6 @@
+framework module HMAD {
+  umbrella header "HMAD.h"
+
+  export *
+  module * { export * }
+}

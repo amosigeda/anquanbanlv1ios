@@ -1,0 +1,6 @@
+framework module adsdk {
+  umbrella header "adsdk.h"
+
+  export *
+  module * { export * }
+}

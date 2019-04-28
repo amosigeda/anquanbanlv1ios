@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WatchFirmwareViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch.png" translatesAutoresizingMaskIntoConstraints="NO" id="b0U-2n-MQ5">
+                    <rect key="frame" x="42" y="74" width="50" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6Sk-ET-sa8"/>
+                        <constraint firstAttribute="height" constant="67" id="EZS-YS-0Uh"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6Sk-ET-sa8"/>
+                            <exclude reference="EZS-YS-0Uh"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="6Sk-ET-sa8"/>
+                            <include reference="EZS-YS-0Uh"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前的版本号: 1.04" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-qB-F7P">
+                    <rect key="frame" x="112" y="120" width="209" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CCK-xu-npK"/>
+                        <constraint firstAttribute="width" constant="209" id="mkf-lm-Xji"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="CCK-xu-npK"/>
+                            <exclude reference="mkf-lm-Xji"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="CCK-xu-npK"/>
+                            <include reference="mkf-lm-Xji"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝贝的手表" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZB-h2-BHf">
+                    <rect key="frame" x="112" y="81" width="114" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="5cb-PA-Lfs"/>
+                        <constraint firstAttribute="height" constant="21" id="wdR-ED-2Sn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5cb-PA-Lfs"/>
+                            <exclude reference="wdR-ED-2Sn"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="5cb-PA-Lfs"/>
+                            <include reference="wdR-ED-2Sn"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9g-RX-2FF">
+                    <rect key="frame" x="0.0" y="158" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yUQ-ig-ai0"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="yUQ-ig-ai0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="yUQ-ig-ai0"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前手表已是最新版本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-1Y-sFD">
+                    <rect key="frame" x="51" y="182" width="274" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="E7e-hb-zh1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="E7e-hb-zh1"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="E7e-hb-zh1"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GZB-h2-BHf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="BSm-rz-ixq"/>
+                <constraint firstAttribute="trailing" secondItem="z9g-RX-2FF" secondAttribute="trailing" id="GBX-Z3-lJ1"/>
+                <constraint firstAttribute="trailing" secondItem="lqi-1Y-sFD" secondAttribute="trailing" constant="50" id="HCd-Kr-NcJ"/>
+                <constraint firstItem="lqi-1Y-sFD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="MLC-pm-yLk"/>
+                <constraint firstItem="vPo-qB-F7P" firstAttribute="leading" secondItem="b0U-2n-MQ5" secondAttribute="trailing" constant="20" id="UhT-aP-Mfj"/>
+                <constraint firstItem="z9g-RX-2FF" firstAttribute="top" secondItem="vPo-qB-F7P" secondAttribute="bottom" constant="17" id="VCy-AT-1If"/>
+                <constraint firstItem="lqi-1Y-sFD" firstAttribute="top" secondItem="z9g-RX-2FF" secondAttribute="bottom" constant="23" id="XaE-3i-YLV"/>
+                <constraint firstItem="GZB-h2-BHf" firstAttribute="leading" secondItem="b0U-2n-MQ5" secondAttribute="trailing" constant="20" id="ftr-xl-JZJ"/>
+                <constraint firstItem="b0U-2n-MQ5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="q01-TC-0Xc"/>
+                <constraint firstItem="z9g-RX-2FF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ym6-h9-z5Q"/>
+                <constraint firstItem="b0U-2n-MQ5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="42" id="yuC-F9-OaT"/>
+                <constraint firstItem="vPo-qB-F7P" firstAttribute="top" secondItem="GZB-h2-BHf" secondAttribute="bottom" constant="18" id="zbF-5S-hjn"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="b0U-2n-MQ5"/>
+                    <exclude reference="vPo-qB-F7P"/>
+                    <exclude reference="GZB-h2-BHf"/>
+                    <exclude reference="z9g-RX-2FF"/>
+                    <exclude reference="lqi-1Y-sFD"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="BSm-rz-ixq"/>
+                    <exclude reference="ftr-xl-JZJ"/>
+                    <exclude reference="HCd-Kr-NcJ"/>
+                    <exclude reference="MLC-pm-yLk"/>
+                    <exclude reference="XaE-3i-YLV"/>
+                    <exclude reference="UhT-aP-Mfj"/>
+                    <exclude reference="zbF-5S-hjn"/>
+                    <exclude reference="q01-TC-0Xc"/>
+                    <exclude reference="yuC-F9-OaT"/>
+                    <exclude reference="GBX-Z3-lJ1"/>
+                    <exclude reference="VCy-AT-1If"/>
+                    <exclude reference="ym6-h9-z5Q"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="b0U-2n-MQ5"/>
+                    <include reference="vPo-qB-F7P"/>
+                    <include reference="GZB-h2-BHf"/>
+                    <include reference="z9g-RX-2FF"/>
+                    <include reference="lqi-1Y-sFD"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="BSm-rz-ixq"/>
+                    <include reference="ftr-xl-JZJ"/>
+                    <include reference="HCd-Kr-NcJ"/>
+                    <include reference="MLC-pm-yLk"/>
+                    <include reference="XaE-3i-YLV"/>
+                    <include reference="UhT-aP-Mfj"/>
+                    <include reference="zbF-5S-hjn"/>
+                    <include reference="q01-TC-0Xc"/>
+                    <include reference="yuC-F9-OaT"/>
+                    <include reference="GBX-Z3-lJ1"/>
+                    <include reference="VCy-AT-1If"/>
+                    <include reference="ym6-h9-z5Q"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="watch.png" width="20" height="26"/>
+    </resources>
+</document>
